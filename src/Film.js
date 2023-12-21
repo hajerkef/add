@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Addfilm from './Addfilm'
 import 'bootstrap/dist/css/bootstrap.css'
 import datafilm from './Ffilm'
+import Searchfilm from './Searchfilm'
 export default function Film() {
 
 const [films,setfilms]=useState(datafilm)
@@ -43,6 +44,7 @@ const handle=(newFilm)=>{
 
         }
       <Addfilm onAdd={handle}/>
+      <Searchfilm/>
     </div>
 
   )
